@@ -22,6 +22,8 @@ I wanted to keep it simple but it still have to confuse the viewer. How is that 
 
 Special thanks to "maerzhase" for your very useful MagicLineAnimationGenerator witch makes it possible to built your own 6 frame animation https://github.com/maerzhase/MagicLineAnimationGenerator
 
+#Abstract
 
+The idea of my project was to surprise the viewer with the help of an illusion. For this i used the morales effekt (6 frame anmitaion) especially because it works with movement. wich is a central topic in the modern society. Everything is getting faster, more precise and effektive. The human beeing always has to work  directly like a machine  at it`s best 24 hours a day. The human is in movement everytime to follow his aims. The question is if people still have the ability to follow their realy dreams and if they run after something with never had existed.
 
 
