@@ -1,3 +1,4 @@
+![](images/motorheader.jpg)
 # conceptual formulation
 
 Our task was to create a motorized Poster or Object witch interacts with the viewer. It has to be created in this way, that there isn´t an active input needed from the person who stands in front of it.
