@@ -29,13 +29,15 @@ I wanted to keep it simple but it still have to confuse the viewer. How is that 
 ![](images/IMG_8102.jpg)![](images/IMG_8101.jpg)
 ![](images/IMG_8104.jpg)![](images/IMG_8109.jpg)
 
-#technical details
+# wiring diagram
 
 ![](Data/Schaltplan.png)
 
+# Final result
 
 
-![Imgur](http://i.imgur.com/tIwwKnB.gif)
+
+
 
 
 
@@ -48,6 +50,8 @@ I wanted to keep it simple but it still have to confuse the viewer. How is that 
 # Special Thanks
 
 Special thanks to "maerzhase" for your very useful MagicLineAnimationGenerator witch makes it possible to built your own 6 frame animation https://github.com/maerzhase/MagicLineAnimationGenerator
+
+![Imgur](http://i.imgur.com/tIwwKnB.gif) ![Imgur](http://i.imgur.com/tIwwKnB.gif) ![Imgur](http://i.imgur.com/tIwwKnB.gif)
 
 #Abstract
 
