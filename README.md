@@ -26,7 +26,7 @@ I wanted to keep it simple but it still have to confuse the viewer. How is that 
 
 
 ![](images/IMG_8100.jpg)![](images/IMG_8101.jpg)![](images/IMG_8102.jpg)
-![](images/IMG_8103.jpg)![](images/IMG_8108.jpg)[]!(images/IMG_8104.jpg)
+![](images/IMG_8103.jpg)![](images/IMG_8108.jpg)![](images/IMG_8104.jpg)
 ![](images/IMG_8109.jpg)![](Data/Schaltplan.png)
 
 
