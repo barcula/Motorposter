@@ -26,8 +26,8 @@ I wanted to keep it simple but it still have to confuse the viewer. How is that 
 
 
 ![](images/IMG_8100.jpg)![](images/IMG_8107.jpg)
-![](images/IMG_8102.jpg)![](images/IMG_8101.jpg)![](images/IMG_8104.jpg)
-![](images/IMG_8109.jpg)
+![](images/IMG_8102.jpg)![](images/IMG_8101.jpg)
+![](images/IMG_8104.jpg)![](images/IMG_8109.jpg)
 
 #technical details
 
