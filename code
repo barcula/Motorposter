@@ -1,0 +1,99 @@
+
+// @author Fabian Moron Zirfas
+ 
+#define BUFFERLENGTH 5 // numbers of places in buffer
+
+// bind stepper with schmalzhaus.com easydriver to poti
+#define DIR_PIN 8
+#define STEP_PIN 9
+#define ENABLE_PIN 5
+ 
+ 
+int sensorreadingraw; // raw value reading from the shapr sensor
+int average = 0; // will hold the calculated average from sensor reading
+ 
+int sensorbuffer  [BUFFERLENGTH] = {0, 0, 0, 0, 0}; // buffer for averaging
+//int dir = LOW;
+
+//speed is any number from .01 -> 1 with 1 being fastest - Slower is stronger
+float master_speed = 0.01;
+
+  int sensorpin = 0;                 // analog pin used to connect the sharp sensor
+int val = 0;
+
+void setup(){
+  Serial.begin(9600);
+  pinMode(DIR_PIN, OUTPUT);
+  pinMode(STEP_PIN, OUTPUT);
+  pinMode(ENABLE_PIN, OUTPUT);
+
+
+
+
+}
+void loop(){
+// val = analogRead(sensorpin);       // reads the value of the sharp sensor
+
+   sensorreadingraw = analogRead(sensorpin); // read in the sharp sensor
+  average = calcaverage(sensorreadingraw); // calculate the average
+  Serial.println(average);
+// delay(100); 
+
+ 
+if (average > 150) {
+digitalWrite(ENABLE_PIN, HIGH);
+
+  rotate(200, master_speed, HIGH);
+  
+  digitalWrite(ENABLE_PIN, LOW);
+
+}
+
+//delay(1000);
+//delay(1000);
+
+}
+
+
+
+void rotate(int steps, float speed, int dir){
+  //rotate a specific number of microsteps (8 microsteps per step) - (negitive for reverse movement)
+
+  
+  digitalWrite(DIR_PIN, dir);
+
+  float usDelay = (1/speed) * 70;
+
+  for(int i=0; i < steps; i++){
+
+    digitalWrite(STEP_PIN, HIGH);
+    delayMicroseconds(usDelay);
+
+    digitalWrite(STEP_PIN, LOW);
+    delayMicroseconds(usDelay);
+  }
+}
+
+// this function calculates the average of our read values
+// see
+// https://www.sparkfun.com/products/8958
+// in the comments
+ 
+// @param int sensorreadingraw = the value from analogRead
+// @return int  = the calulated average
+int calcaverage(int sensorreadingraw) {
+   // loop the buffer from the end
+  for (int j = BUFFERLENGTH - 1; j >= 0; j--) {
+    if (j == BUFFERLENGTH - 1) {
+      sensorbuffer[j] = sensorreadingraw;
+    } else {
+      sensorbuffer[j] = sensorbuffer[j + 1];
+    }
+  }
+  int ave = 0;
+  for (int i = 0; i <  BUFFERLENGTH; i++) {
+    ave += sensorbuffer[i];
+  }
+  return ave / BUFFERLENGTH;
+ 
+}
