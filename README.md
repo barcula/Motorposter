@@ -23,6 +23,15 @@ I wanted to keep it simple but it still have to confuse the viewer. How is that 
 + breadboard
 + motordriver
 + 8V power supply
++ infrared sensor
+
+
+When the viewer stands in front of the motorposter the infrared sensor send a signal to the arduino. It can be seen as an activator wich makes the code run. The code includes commands wich are send to the stepper motor.
+The printed wallpaper goes along the two reels in an infinite loop. One of the two reels is connected over the gear wheel with the stepper motor which is controled by the aduino. The transparent sheet with the black lines on it is fixed behind the gap of the cover of the motorposter.
+The printed wallpaper starts to move and the 6 frame animation gets started until the viewer veer away from the object. 
+
+
+
 
 
 ![](images/IMG_8100.jpg)![](images/IMG_8107.jpg)
